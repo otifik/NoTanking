@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aitsuki.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:autoClose="true"
+    app:designer="@string/parallax_designer"
+    app:preview="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end">
+
+        <TextView
+            android:id="@+id/todo_done"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text="@string/s_mark_done"
+            android:gravity="center"
+            android:background="@color/blue_200"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/todo_jump"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text="@string/jump_to_app"
+            android:gravity="center"
+            android:background="@color/blue_700"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/todo_delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="@string/delete"
+            android:background="@color/red"
+            android:gravity="center"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/todo_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+</com.aitsuki.swipe.SwipeLayout>
